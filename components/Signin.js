@@ -1,11 +1,13 @@
 import styles from './Signin.module.css'
-import ReactLogo from '../assets/logo.svg';
+import ReactLogo from './ReactLogo';
 
 const Signin = () => (
         
     <div className={styles.Signin}>
         <div className={styles.Signin_header}>
-            <ReactLogo className={styles.Signin_logo} alt="logo"  />
+            <div className={styles.Signin_logo} alt="logo" >
+                <ReactLogo />
+            </div>
             <h1 className={styles.Signin_title} >Ranked Voting</h1>
             <h3 className={styles.Signin_subtitle} >Login</h3>
             <form className="justify-content-start">
